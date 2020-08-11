@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    
+        
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:image" content="/images/paper2.jpg"/>
+    
+
+
+
+<meta name="twitter:title" content="PythonU1"/>
+<meta name="twitter:description" content=""/>
+<meta name="twitter:site" content="@"/>
+
+
+
+  	<meta property="og:title" content="PythonU1 &middot; Luck Sugar" />
+  	<meta property="og:site_name" content="Luck Sugar" />
+  	<meta property="og:url" content="https://zmzhang97.github.io/2020/08/11/pythonu1/" />
+
+    
+       <meta property="og:image" content="/images/paper2.jpg"/>
+    
+
+    
+    <meta property="og:description" content="" />
+  	<meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2020-08-11T12:55:05&#43;08:00" />
+
+    
+    <meta property="article:tag" content="" />
+    
+    
+
+    <title>PythonU1 &middot; Luck Sugar</title>
+
+    
+    <meta name="description" content="Python学习 一、Python基本语法元素 1、程序设计基本方法 1、计算机的概念：功能性、可编程性； 计算机发展：遵循摩尔定律（集成电路晶体管数量2倍翻）;
+2、编程语言的执行方式
+ 源代码：计算机程序，人类可读； 目标代码：计算机可直接执行，人类不可读。 解释：将源代码逐步转换成目标代码同时逐条执行； 分类：执" />
+    
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="https://zmzhang97.github.io/images/favicon.ico">
+	  <link rel="apple-touch-icon" href="https://zmzhang97.github.io/images/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="https://zmzhang97.github.io/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="https://zmzhang97.github.io/css/nav.css" />
+
+    
+
+    
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        
+        <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+        <link href="http://feeds.feedburner.com/..." rel="alternate" type="application/rss+xml" title="Luck Sugar" />
+    
+    <meta name="generator" content="Hugo 0.74.2" />
+
+    <link rel="canonical" href="https://zmzhang97.github.io/2020/08/11/pythonu1/" />
+
+    
+      
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name":  null ,
+        "logo": "https://zmzhang97.github.io/images/logo2.ico"
+    },
+    "author": {
+        "@type": "Person",
+        "name":  null ,
+        
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://zmzhang97.github.io/images/logo2.ico",
+            "width": 250,
+            "height": 250
+        }, 
+        
+        "url": "https://blog.csdn.net/zmzhangcsdn/",
+        "sameAs": [
+            
+            
+             
+             
+             
+             
+             
+            
+        ],
+        "description": "秃头研究生"
+        
+    },
+    "headline": "PythonU1",
+    "name": "PythonU1",
+    "wordCount":  145 ,
+    "timeRequired": "PT1M",
+    "inLanguage": {
+      "@type": "Language",
+      "alternateName": "en"
+    },
+    "url": "https://zmzhang97.github.io/2020/08/11/pythonu1/",
+    "datePublished": "2020-08-11T12:55Z",
+    "dateModified": "2020-08-11T12:55Z",
+    
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://zmzhang97.github.io/images/paper2.jpg",
+        "width": 3000,
+        "height": 1445
+    },
+    
+    "keywords": "",
+    "description": "",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://zmzhang97.github.io/2020/08/11/pythonu1/"
+    }
+}
+    </script>
+    
+
+
+    
+
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-79101-12', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://zmzhang97.github.io/">Home</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://zmzhang97.github.io/tags/paper">Paper</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://zmzhang97.github.io/tags/others">Others</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://zmzhang97.github.io/about">About</a>
+            </li>
+        
+        
+    </ul>
+
+    
+    <a class="subscribe-button icon-feed" href="http://feeds.feedburner.com/...">Subscribe</a> </div>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+  
+  <header class="main-header post-head" style="background-image: url(/images/paper2.jpg)">
+  
+  <nav class="main-nav overlay clearfix">
+
+
+  
+      <a class="blog-logo" href="https://zmzhang97.github.io/"><img src="https://zmzhang97.github.io/images/logo2.ico" alt="Home" /></a>
+  
+  
+      <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">PythonU1</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2020-08-11T12:55:05&#43;08:00">
+            Aug 11, 2020
+          </time>
+        
+         
+          <span class="post-tag small"><a href="https://zmzhang97.github.io//tags//">#</a></span>
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      <h1 id="python学习">Python学习</h1>
+<h2 id="一python基本语法元素">一、Python基本语法元素</h2>
+<h3 id="1程序设计基本方法">1、程序设计基本方法</h3>
+<p>1、计算机的概念：功能性、可编程性；
+计算机发展：遵循摩尔定律（集成电路晶体管数量2倍翻）;</p>
+<p>2、编程语言的执行方式</p>
+<ul>
+<li>源代码：计算机程序，人类可读；</li>
+<li>目标代码：计算机可直接执行，人类不可读。</li>
+<li>解释：将源代码逐步转换成目标代码同时逐条执行；</li>
+<li>分类：执行方式不同可分为：</li>
+<li>静态语言：使用编译执行的编程语言（C/C++、Java语言），编译器一次性生成目标代码，优化更充分，程序运行更快；</li>
+<li>脚本语言：使用解释执行（Python、Javascript、PHP），执行程序时需要源代码，维护更灵活，可跨多个操作系统平台。</li>
+</ul>
+<p>3、程序的基本编写方法IPO</p>
+<ul>
+<li>输入-处理-输出；</li>
+<li>编程解决问题步骤：分析问题-划分边界-设计算法-编写程序-调试测试-升级维护
+确定IPO-编写程序-检查程序</li>
+</ul>
+<h3 id="2python开发环境配置">2、Python开发环境配置</h3>
+<p>Python的两种编程方式：</p>
+<ul>
+<li>交互式：对每个输入语句即时运行结果；</li>
+<li>文件式：批量执行一组语句并运行结果。</li>
+</ul>
+<p>圆的面积：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">r <span style="color:#f92672">=</span> <span style="color:#ae81ff">25</span>
+area <span style="color:#f92672">=</span> <span style="color:#ae81ff">3.1415</span> <span style="color:#f92672">*</span> r <span style="color:#f92672">*</span> r
+<span style="color:#66d9ef">print</span>(area)
+</code></pre></div><pre><code>1963.4375000000002
+</code></pre>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;{:.2f}&#34;</span><span style="color:#f92672">.</span>format(area))
+</code></pre></div><pre><code>1963.44
+</code></pre>
+<p>绘制多个同切圆：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> turtle
+turtle<span style="color:#f92672">.</span>pensize(<span style="color:#ae81ff">2</span>)
+turtle<span style="color:#f92672">.</span>circle(<span style="color:#ae81ff">10</span>)
+turtle<span style="color:#f92672">.</span>circle(<span style="color:#ae81ff">40</span>)
+turtle<span style="color:#f92672">.</span>circle(<span style="color:#ae81ff">80</span>)
+turtle<span style="color:#f92672">.</span>circle(<span style="color:#ae81ff">160</span>)
+</code></pre></div><p>绘制五角星：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> turtle <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+color(<span style="color:#e6db74">&#39;red&#39;</span>,<span style="color:#e6db74">&#39;red&#39;</span>)
+begin_fill()
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">5</span>):
+    fd(<span style="color:#ae81ff">200</span>)
+    rt(<span style="color:#ae81ff">144</span>)
+    end_fill()
+
+</code></pre></div><h3 id="实例1温度转换">实例1：温度转换</h3>
+<p>摄氏度与华氏度之间的转换：</p>
+<ul>
+<li>直接温度值转换；</li>
+<li>温度信息发布的声音或图像形式进行理解和转换；</li>
+<li>监控信息发布渠道，实时转换温度值。</li>
+</ul>
+<p>1、分析问题：温度值进行转换，温度数值要标明温度体系；
+2、划分边界：(IPO)输入温度值-转换-输出温度值；
+3、设计算法：利用转换公式，C=（F-32）/1.8，F=C*1.8+32；
+4、编写程序：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#TempConvert.py</span>
+TempStr <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;请输入带有符号的温度值&#34;</span>)
+<span style="color:#66d9ef">if</span> TempStr[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>] <span style="color:#f92672">in</span> [<span style="color:#e6db74">&#39;F&#39;</span>,<span style="color:#e6db74">&#39;f&#39;</span>]:
+    C <span style="color:#f92672">=</span> (eval(TempStr[<span style="color:#ae81ff">0</span>:<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]) <span style="color:#f92672">-</span> <span style="color:#ae81ff">32</span>)<span style="color:#f92672">/</span><span style="color:#ae81ff">1.8</span>
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;转换后的温度是{:.2f}C&#34;</span><span style="color:#f92672">.</span>format(C))
+<span style="color:#66d9ef">elif</span> TempStr[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>] <span style="color:#f92672">in</span> [<span style="color:#e6db74">&#39;C&#39;</span>,<span style="color:#e6db74">&#39;c&#39;</span>]:
+    F <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.8</span><span style="color:#f92672">*</span>eval(TempStr[<span style="color:#ae81ff">0</span>:<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]) <span style="color:#f92672">+</span> <span style="color:#ae81ff">32</span>
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;转换后的温度是{:.2f}F&#34;</span><span style="color:#f92672">.</span>format(F))
+<span style="color:#66d9ef">else</span>:
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;输入格式错误&#34;</span>)
+</code></pre></div><pre><code>请输入带有符号的温度值37c
+转换后的温度是98.60F
+</code></pre>
+<h3 id="14python程序语法元素分析">1.4Python程序语法元素分析</h3>
+<blockquote>
+<p>程序的格式框架、命名与保留字、数据类型、语句与函数、Python程序的输入输出</p>
+</blockquote>
+<p>1、代码高亮：编程的色彩辅助体系；<br>
+缩进：一行代码开始前的空白区域，表达程序的格式框架；严格明确，所属关系、长度一致；<br>
+注释：不被运行，起解释代码作用；单行注释（#开头），多行注释（&lsquo;&lsquo;&lsquo;注释&rsquo;''）。</p>
+<p>2、命名与保留字：
+<!-- raw HTML omitted -->   变量:程序中用于保存和表示数据的占位符号；
+<!-- raw HTML omitted -->   命名规则：大小写字母、数字、下划线和汉字等字符及组合；（注意：大小写敏感、首字符不能是数字、不与保留字一样）</p>
+<p>3、数据类型：</p>
+<ul>
+<li>
+<p>整数和浮点数；整数：数学中的整数：10011101、-89； 浮点数：数学中的实数带有小数：1.8、-1.0；</p>
+</li>
+<li>
+<p>字符串：&ldquo;10,011,101&rdquo;；由0个或多个字符组成的有序字符序列；单引号或者双引号；是一种有序序列（正向递增0.1.2.3&hellip;和反向递减-1.-2.-3&hellip;），可进行索引；<br>
+使用<input disabled="" type="checkbox"> 获取字符串中一个或多个字符：索引：返回字符串中单个字符 &lt;字符串&gt;[M]  ；例如：（取出第0个字符）&ldquo;请输入带有符号的温度值：&quot;[0]  或者 （取出倒数第一个字符） TempStr[-1];<br>
+切片：返回字符串中一段字符子串 &lt;字符串&gt;[M:N]；例如：（取出第1、2个字符）&ldquo;请输入带有符号的温度值：&quot;[1:3]  或者 （取出从0开始但不到最后一个字符串的字符） TempStr[0:-1]；</p>
+</li>
+<li>
+<p>列表：由0个或多个数据组成的有序序列；列表使用<input disabled="" type="checkbox"> 表示，采用逗号分隔个元素：[10,011,101]、[&lsquo;F&rsquo;,&lsquo;f&rsquo;]；<br>
+使用保留字in判断一个元素是否在列表中：TempStr[-1] in [&lsquo;C&rsquo;,&lsquo;c&rsquo;]</p>
+</li>
+</ul>
+<p>4、语句与函数：</p>
+<ul>
+<li>赋值语句：由赋值符号构成的一行代码；用来给变量赋予新数据值、其右侧的数据类型同时作用于变量；</li>
+<li>分支语句：判断条件；if、elif、else</li>
+<li>函数：根据输入参数产生不同输出的功能过程；函数采用&lt;函数名&gt;(&lt;参数&gt;)方式使用，例如：eval(TempStr[0:-1])；</li>
+</ul>
+<p>5、输入输出：</p>
+<ul>
+<li>input( )：从控制台获得输入；&lt;变量&gt; = input(&lt;提示信息字符串&gt;)；用户输入的信息以字符串类型保存在&lt;变量&gt;中；</li>
+<li>print( )：输出结果；字符串类型的一对引号仅在程序内部使用，输出无引号；print()函数的格式化：print(&ldquo;转换的温度是{:.2f}C&rdquo;.format(C)):{ }表示槽，后续变量填充到槽中；{:.2f}表示将变量C填充到这个位置时取小数点后2位；</li>
+<li>评估函数：eval( )：去掉参数最外侧引号并执行余下语句的函数；</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">eval(<span style="color:#e6db74">&#34;1&#34;</span>)
+</code></pre></div><pre><code>1
+</code></pre>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">eval(<span style="color:#e6db74">&#34;&#39;1+2&#39;&#34;</span>)
+</code></pre></div><pre><code>'1+2'
+</code></pre>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">eval(<span style="color:#e6db74">&#39;&#34;1+2&#34;&#39;</span>)
+</code></pre></div><pre><code>'1+2'
+</code></pre>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">eval(<span style="color:#e6db74">&#34;1+2&#34;</span>)
+</code></pre></div><pre><code>3
+</code></pre>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">eval(<span style="color:#e6db74">&#39;print(&#34;Hello&#34;)&#39;</span>)
+</code></pre></div><pre><code>Hello
+</code></pre>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+</code></pre></div>
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+
+
+
+
+
+
+
+
+<figure class="author-image">
+    <a class="img" href="https://zmzhang97.github.io/" style="background-image: url(/images/logo2.ico)"><span class="hidden">辣克糖's Picture</span></a>
+</figure>
+
+
+<section class="author">
+  <h4><a href="https://zmzhang97.github.io/">辣克糖</a></h4>
+  
+  <p>秃头研究生</p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location">ShenZhen, China</span>
+    <span class="author-link icon-link"><a href="https://blog.csdn.net/zmzhangcsdn/">https://blog.csdn.net/zmzhangcsdn/</a></span>
+  </div>
+</section>
+
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=PythonU1&nbsp;-&nbsp;Luck%20Sugar&amp;url=https%3a%2f%2fzmzhang97.github.io%2f2020%2f08%2f11%2fpythonu1%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fzmzhang97.github.io%2f2020%2f08%2f11%2fpythonu1%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fzmzhang97.github.io%2f2020%2f08%2f11%2fpythonu1%2f&amp;description=PythonU1"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2fzmzhang97.github.io%2f2020%2f08%2f11%2fpythonu1%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+<div id="disqus_thread"></div>
+<script>
+
+
+
+
+var disqus_config = function () {
+this.page.url = "https:\/\/zmzhang97.github.io\/2020\/08\/11\/pythonu1\/";  
+this.page.identifier = "https:\/\/zmzhang97.github.io\/2020\/08\/11\/pythonu1\/"; 
+};
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://LuckSugar.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+
+
+
+
+  </footer>
+</article>
+
+</main>
+
+
+  <aside class="read-next">
+  
+  
+      <a class="read-next-story prev" style="background-image: url(/images/cover1-1.jpg)" href="https://zmzhang97.github.io/2020/08/11/pythonu2/">
+          <section class="post">
+              <h2>PythonU2</h2>
+          </section>
+      </a>
+  
+</aside>
+
+
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">Luck Sugar</a> All rights reserved - 2020</section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="https://zmzhang97.github.io/js/jquery.js"></script>
+    <script type="text/javascript" src="https://zmzhang97.github.io/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="https://zmzhang97.github.io/js/index.js"></script>
+    
+</body>
+</html>
+

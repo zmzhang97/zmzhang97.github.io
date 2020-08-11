@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Luck Sugar</title>
+    <link>https://zmzhang97.github.io/post/</link>
+    <description>Recent content in Posts on Luck Sugar</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>All rights reserved - 2020</copyright>
+    <lastBuildDate>Tue, 11 Aug 2020 12:55:05 +0800</lastBuildDate>
+    
+	<atom:link href="https://zmzhang97.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PythonU1</title>
+      <link>https://zmzhang97.github.io/2020/08/11/pythonu1/</link>
+      <pubDate>Tue, 11 Aug 2020 12:55:05 +0800</pubDate>
+      
+      <guid>https://zmzhang97.github.io/2020/08/11/pythonu1/</guid>
+      <description>Python学习 一、Python基本语法元素 1、程序设计基本方法 1、计算机的概念：功能性、可编程性； 计算机发展：遵循摩尔定律（集成电路晶体管数量2倍翻）;
+2、编程语言的执行方式
+ 源代码：计算机程序，人类可读； 目标代码：计算机可直接执行，人类不可读。 解释：将源代码逐步转换成目标代码同时逐条执行； 分类：执行方式不同可分为： 静态语言：使用编译执行的编程语言（C/C++、Java语言），编译器一次性生成目标代码，优化更充分，程序运行更快； 脚本语言：使用解释执行（Python、Javascript、PHP），执行程序时需要源代码，维护更灵活，可跨多个操作系统平台。  3、程序的基本编写方法IPO
+ 输入-处理-输出； 编程解决问题步骤：分析问题-划分边界-设计算法-编写程序-调试测试-升级维护 确定IPO-编写程序-检查程序  2、Python开发环境配置 Python的两种编程方式：
+ 交互式：对每个输入语句即时运行结果； 文件式：批量执行一组语句并运行结果。  圆的面积：
+r = 25 area = 3.1415 * r * r print(area) 1963.4375000000002  print(&amp;#34;{:.2f}&amp;#34;.format(area)) 1963.44  绘制多个同切圆：
+import turtle turtle.pensize(2) turtle.circle(10) turtle.circle(40) turtle.circle(80) turtle.circle(160) 绘制五角星：
+from turtle import * color(&amp;#39;red&amp;#39;,&amp;#39;red&amp;#39;) begin_fill() for i in range(5): fd(200) rt(144) end_fill() 实例1：温度转换 摄氏度与华氏度之间的转换：
+ 直接温度值转换； 温度信息发布的声音或图像形式进行理解和转换； 监控信息发布渠道，实时转换温度值。  1、分析问题：温度值进行转换，温度数值要标明温度体系； 2、划分边界：(IPO)输入温度值-转换-输出温度值； 3、设计算法：利用转换公式，C=（F-32）/1.</description>
+    </item>
+    
+    <item>
+      <title>PythonU2</title>
+      <link>https://zmzhang97.github.io/2020/08/11/pythonu2/</link>
+      <pubDate>Tue, 11 Aug 2020 12:55:05 +0800</pubDate>
+      
+      <guid>https://zmzhang97.github.io/2020/08/11/pythonu2/</guid>
+      <description>完成工作 未完成  二、基本图形绘制 导学  上节课复习
+ TmpStr = input(&amp;#34;请输入要转换的温度值：&amp;#34;) if TmpStr[-1] in (&amp;#39;F&amp;#39;,&amp;#39;f&amp;#39;): TmpStr = (eval(TmpStr[0:-1])-32)/1.8 print(&amp;#34;转换为：{:.2f}C&amp;#34;.format(TmpStr)) elif TmpStr[-1] in (&amp;#39;C&amp;#39;,&amp;#39;c&amp;#39;): TmpStr = eval(TmpStr[0:-1])*1.8+32 print(&amp;#34;转换为：{:.2f}F&amp;#34;.format(TmpStr)) else: print(&amp;#34;输入错误！&amp;#34;) 请输入要转换的温度值：3 输入错误！  2.1 深入理解Python语言 方法论：海龟绘图体系 C语言  学习内容：指针、内存、数据类型 语言本质：理解计算机系统结构 解决问题：性能 适用对象：计算机类专业  JAVA语言  1：对象、跨平台、运行时 2：理解主客体关系 3：跨平台 4：软件类专业  C++语言  1：对象、多态、继承 2：理解主客体关系 3：大规模程序 4：计算机专业  VB语言  1：对象、按钮、文本框 2：理解交互逻辑 3：桌面应用 4：不确定  Python语言  1：编程逻辑、第三方库 2：理解问题求解 3：各类问题 4：所有专业  超级语言：粘性整合已有程序，具备庞大计算生态 高级语言：接近自然语言，编译器，与CPU型号无关</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sketchnote on Luck Sugar</title>
+    <link>https://zmzhang97.github.io/tags/sketchnote/</link>
+    <description>Recent content in sketchnote on Luck Sugar</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>All rights reserved - 2020</copyright>
+    <lastBuildDate>Tue, 11 Aug 2020 12:55:05 +0800</lastBuildDate>
+    
+	<atom:link href="https://zmzhang97.github.io/tags/sketchnote/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PythonU2</title>
+      <link>https://zmzhang97.github.io/2020/08/11/pythonu2/</link>
+      <pubDate>Tue, 11 Aug 2020 12:55:05 +0800</pubDate>
+      
+      <guid>https://zmzhang97.github.io/2020/08/11/pythonu2/</guid>
+      <description>完成工作 未完成  二、基本图形绘制 导学  上节课复习
+ TmpStr = input(&amp;#34;请输入要转换的温度值：&amp;#34;) if TmpStr[-1] in (&amp;#39;F&amp;#39;,&amp;#39;f&amp;#39;): TmpStr = (eval(TmpStr[0:-1])-32)/1.8 print(&amp;#34;转换为：{:.2f}C&amp;#34;.format(TmpStr)) elif TmpStr[-1] in (&amp;#39;C&amp;#39;,&amp;#39;c&amp;#39;): TmpStr = eval(TmpStr[0:-1])*1.8+32 print(&amp;#34;转换为：{:.2f}F&amp;#34;.format(TmpStr)) else: print(&amp;#34;输入错误！&amp;#34;) 请输入要转换的温度值：3 输入错误！  2.1 深入理解Python语言 方法论：海龟绘图体系 C语言  学习内容：指针、内存、数据类型 语言本质：理解计算机系统结构 解决问题：性能 适用对象：计算机类专业  JAVA语言  1：对象、跨平台、运行时 2：理解主客体关系 3：跨平台 4：软件类专业  C++语言  1：对象、多态、继承 2：理解主客体关系 3：大规模程序 4：计算机专业  VB语言  1：对象、按钮、文本框 2：理解交互逻辑 3：桌面应用 4：不确定  Python语言  1：编程逻辑、第三方库 2：理解问题求解 3：各类问题 4：所有专业  超级语言：粘性整合已有程序，具备庞大计算生态 高级语言：接近自然语言，编译器，与CPU型号无关</description>
+    </item>
+    
+  </channel>
+</rss>

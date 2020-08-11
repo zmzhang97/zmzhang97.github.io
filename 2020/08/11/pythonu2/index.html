@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    
+        
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:image" content="/images/cover1-1.jpg"/>
+    
+
+
+
+<meta name="twitter:title" content="PythonU2"/>
+<meta name="twitter:description" content=""/>
+<meta name="twitter:site" content="@"/>
+
+
+
+  	<meta property="og:title" content="PythonU2 &middot; Luck Sugar" />
+  	<meta property="og:site_name" content="Luck Sugar" />
+  	<meta property="og:url" content="https://zmzhang97.github.io/2020/08/11/pythonu2/" />
+
+    
+       <meta property="og:image" content="/images/cover1-1.jpg"/>
+    
+
+    
+    <meta property="og:description" content="" />
+  	<meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2020-08-11T12:55:05&#43;08:00" />
+
+    
+    <meta property="article:tag" content="event" />
+    
+    <meta property="article:tag" content="dotScale" />
+    
+    <meta property="article:tag" content="sketchnote" />
+    
+    
+
+    <title>PythonU2 &middot; Luck Sugar</title>
+
+    
+    <meta name="description" content="完成工作 未完成  二、基本图形绘制 导学  上节课复习
+ TmpStr = input(&amp;#34;请输入要转换的温度值：&amp;#34;) if TmpStr[-1] in (&amp;#39;F&amp;#39;,&amp;#39;f&amp;#39;): TmpStr = (eval(TmpStr[0:-1])-32)/1.8 print(&amp;#34;" />
+    
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="https://zmzhang97.github.io/images/favicon.ico">
+	  <link rel="apple-touch-icon" href="https://zmzhang97.github.io/images/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="https://zmzhang97.github.io/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="https://zmzhang97.github.io/css/nav.css" />
+
+    
+
+    
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        
+        <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+        <link href="http://feeds.feedburner.com/..." rel="alternate" type="application/rss+xml" title="Luck Sugar" />
+    
+    <meta name="generator" content="Hugo 0.74.2" />
+
+    <link rel="canonical" href="https://zmzhang97.github.io/2020/08/11/pythonu2/" />
+
+    
+      
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name":  null ,
+        "logo": "https://zmzhang97.github.io/images/logo2.ico"
+    },
+    "author": {
+        "@type": "Person",
+        "name":  null ,
+        
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://zmzhang97.github.io/images/logo2.ico",
+            "width": 250,
+            "height": 250
+        }, 
+        
+        "url": "https://blog.csdn.net/zmzhangcsdn/",
+        "sameAs": [
+            
+            
+             
+             
+             
+             
+             
+            
+        ],
+        "description": "秃头研究生"
+        
+    },
+    "headline": "PythonU2",
+    "name": "PythonU2",
+    "wordCount":  258 ,
+    "timeRequired": "PT2M",
+    "inLanguage": {
+      "@type": "Language",
+      "alternateName": "en"
+    },
+    "url": "https://zmzhang97.github.io/2020/08/11/pythonu2/",
+    "datePublished": "2020-08-11T12:55Z",
+    "dateModified": "2020-08-11T12:55Z",
+    
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://zmzhang97.github.io/images/cover1-1.jpg",
+        "width": 3000,
+        "height": 1445
+    },
+    
+    "keywords": "event, dotScale, sketchnote",
+    "description": "",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://zmzhang97.github.io/2020/08/11/pythonu2/"
+    }
+}
+    </script>
+    
+
+
+    
+
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-79101-12', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://zmzhang97.github.io/">Home</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://zmzhang97.github.io/tags/paper">Paper</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://zmzhang97.github.io/tags/others">Others</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://zmzhang97.github.io/about">About</a>
+            </li>
+        
+        
+    </ul>
+
+    
+    <a class="subscribe-button icon-feed" href="http://feeds.feedburner.com/...">Subscribe</a> </div>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+  
+  <header class="main-header post-head" style="background-image: url(/images/cover1-1.jpg)">
+  
+  <nav class="main-nav overlay clearfix">
+
+
+  
+      <a class="blog-logo" href="https://zmzhang97.github.io/"><img src="https://zmzhang97.github.io/images/logo2.ico" alt="Home" /></a>
+  
+  
+      <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">PythonU2</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2020-08-11T12:55:05&#43;08:00">
+            Aug 11, 2020
+          </time>
+        
+         
+          <span class="post-tag small"><a href="https://zmzhang97.github.io//tags/event/">#event</a></span>
+         
+          <span class="post-tag small"><a href="https://zmzhang97.github.io//tags/dotscale/">#dotScale</a></span>
+         
+          <span class="post-tag small"><a href="https://zmzhang97.github.io//tags/sketchnote/">#sketchnote</a></span>
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      <ul>
+<li><input checked="" disabled="" type="checkbox"> 完成工作</li>
+<li><input disabled="" type="checkbox"> 未完成</li>
+</ul>
+<h2 id="二基本图形绘制">二、基本图形绘制</h2>
+<h3 id="导学">导学</h3>
+<blockquote>
+<p>上节课复习</p>
+</blockquote>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">TmpStr <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;请输入要转换的温度值：&#34;</span>)
+<span style="color:#66d9ef">if</span> TmpStr[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>] <span style="color:#f92672">in</span> (<span style="color:#e6db74">&#39;F&#39;</span>,<span style="color:#e6db74">&#39;f&#39;</span>):
+    TmpStr <span style="color:#f92672">=</span> (eval(TmpStr[<span style="color:#ae81ff">0</span>:<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>])<span style="color:#f92672">-</span><span style="color:#ae81ff">32</span>)<span style="color:#f92672">/</span><span style="color:#ae81ff">1.8</span>
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;转换为：{:.2f}C&#34;</span><span style="color:#f92672">.</span>format(TmpStr))
+<span style="color:#66d9ef">elif</span> TmpStr[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>] <span style="color:#f92672">in</span> (<span style="color:#e6db74">&#39;C&#39;</span>,<span style="color:#e6db74">&#39;c&#39;</span>):
+    TmpStr <span style="color:#f92672">=</span> eval(TmpStr[<span style="color:#ae81ff">0</span>:<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>])<span style="color:#f92672">*</span><span style="color:#ae81ff">1.8</span><span style="color:#f92672">+</span><span style="color:#ae81ff">32</span>
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;转换为：{:.2f}F&#34;</span><span style="color:#f92672">.</span>format(TmpStr))
+<span style="color:#66d9ef">else</span>:
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;输入错误！&#34;</span>)
+</code></pre></div><pre><code>请输入要转换的温度值：3
+输入错误！
+</code></pre>
+<p><img src="attachment:%E5%9B%BE%E7%89%87.png" alt="%E5%9B%BE%E7%89%87.png"></p>
+<p><img src="attachment:%E5%9B%BE%E7%89%87.png" alt="%E5%9B%BE%E7%89%87.png"></p>
+<h3 id="21-深入理解python语言">2.1 深入理解Python语言</h3>
+<h4 id="方法论海龟绘图体系">方法论：海龟绘图体系</h4>
+<h4 id="c语言">C语言</h4>
+<ul>
+<li>学习内容：指针、内存、数据类型</li>
+<li>语言本质：理解计算机系统结构</li>
+<li>解决问题：性能</li>
+<li>适用对象：计算机类专业</li>
+</ul>
+<h4 id="java语言">JAVA语言</h4>
+<ul>
+<li>1：对象、跨平台、运行时</li>
+<li>2：理解主客体关系</li>
+<li>3：跨平台</li>
+<li>4：软件类专业</li>
+</ul>
+<h4 id="c语言-1">C++语言</h4>
+<ul>
+<li>1：对象、多态、继承</li>
+<li>2：理解主客体关系</li>
+<li>3：大规模程序</li>
+<li>4：计算机专业</li>
+</ul>
+<h4 id="vb语言">VB语言</h4>
+<ul>
+<li>1：对象、按钮、文本框</li>
+<li>2：理解交互逻辑</li>
+<li>3：桌面应用</li>
+<li>4：不确定</li>
+</ul>
+<h4 id="python语言">Python语言</h4>
+<ul>
+<li>1：编程逻辑、第三方库</li>
+<li>2：理解问题求解</li>
+<li>3：各类问题</li>
+<li>4：所有专业</li>
+</ul>
+<p>超级语言：粘性整合已有程序，具备庞大计算生态
+高级语言：接近自然语言，编译器，与CPU型号无关<br>
+汇编语言：有助记符，汇编器，与CPU型号有关<br>
+机器语言：代码直接执行，与CPU型号有关</p>
+<h3 id="22-实例-python蟒蛇">2.2 实例 Python蟒蛇</h3>
+<h4 id="1计算机绘图原理是什么">1：计算机绘图原理是什么？</h4>
+<p>一段程序为何能够产生窗体？为何能在窗体上绘制图形？</p>
+<h4 id="2python蟒蛇绘制从哪开始">2：Python蟒蛇绘制从哪开始？</h4>
+<p>如何绘制一条线？如何绘制一个弧形？如何绘制一个蟒蛇？</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#PythonDraw.py</span>
+<span style="color:#f92672">import</span> turtle     <span style="color:#75715e">#程序关键，import：保留字，引入了一个绘图库：turtle</span>
+turtle<span style="color:#f92672">.</span>setup(<span style="color:#ae81ff">650</span>, <span style="color:#ae81ff">350</span>, <span style="color:#ae81ff">200</span>, <span style="color:#ae81ff">200</span>)
+turtle<span style="color:#f92672">.</span>penup()
+turtle<span style="color:#f92672">.</span>fd(<span style="color:#f92672">-</span><span style="color:#ae81ff">250</span>)
+turtle<span style="color:#f92672">.</span>pendown()
+turtle<span style="color:#f92672">.</span>pensize(<span style="color:#ae81ff">25</span>)
+turtle<span style="color:#f92672">.</span>pencolor(<span style="color:#e6db74">&#34;purple&#34;</span>)
+turtle<span style="color:#f92672">.</span>seth(<span style="color:#f92672">-</span><span style="color:#ae81ff">40</span>)
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">4</span>):
+    turtle<span style="color:#f92672">.</span>circle(<span style="color:#ae81ff">40</span>, <span style="color:#ae81ff">80</span>)
+    turtle<span style="color:#f92672">.</span>circle(<span style="color:#f92672">-</span><span style="color:#ae81ff">40</span>,<span style="color:#ae81ff">80</span>)
+turtle<span style="color:#f92672">.</span>circle(<span style="color:#ae81ff">40</span>, <span style="color:#ae81ff">80</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>)
+turtle<span style="color:#f92672">.</span>fd(<span style="color:#ae81ff">40</span>)
+turtle<span style="color:#f92672">.</span>circle(<span style="color:#ae81ff">16</span>, <span style="color:#ae81ff">180</span>)
+turtle<span style="color:#f92672">.</span>fd(<span style="color:#ae81ff">40</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">/</span><span style="color:#ae81ff">3</span>)
+turtle<span style="color:#f92672">.</span>done()
+</code></pre></div><h3 id="23-模块1turtle库的使用">2.3 模块1：turtle库的使用</h3>
+<blockquote>
+<ul>
+<li>1、turtle库基本介绍</li>
+<li>2、turtle绘图窗口布局</li>
+<li>3、turtle空间坐标体系</li>
+<li>4、turtle角度坐标体系</li>
+<li>5、RGB色彩体系</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>turtle库是turtle绘图体系的Python实现<br>
+Python计算生态 = 标准库 + 第三方库</p>
+</blockquote>
+<ul>
+<li>标准库：随解释器直接安装到操作系统中的功能模块</li>
+<li>第三方库：需要经过安装才能使用的功能模块</li>
+<li>库Library、包Package、模块Module，统称模块</li>
+</ul>
+<h4 id="1turtle原理">1、turtle原理</h4>
+<p>有turtle在里面游走</p>
+<h4 id="2turtle绘图窗口">2、turtle绘图窗口</h4>
+<p>turtle的画布空间：最小的单位是像素<br>
+turtle.setup(width, height, startx, starty)：setup()不是必须的：如果没有设置startx和starty的值则默认为屏幕正中心<br>
+<img src="attachment:6GW3Y%25_$V8J%7B55N2J5DEE2S.png" alt="6GW3Y%25_$V8J%7B55N2J5DEE2S.png"></p>
+<h4 id="3turtle库的使用">3、turtle库的使用</h4>
+<blockquote>
+<p>绝对坐标和海龟坐标</p>
+</blockquote>
+<p>窗口的中心为(0, 0)
+turtle.goto(x, y)  #让任何位置的海龟去到达x,y的位置 <br>
+![R8$%28(C$%7DVRWI5%25MU%29UZ1@C5.png](attachment:R8$%28(<a href="mailto:C$%7DVRWI5%25MU%29UZ1@C5.png">C$%7DVRWI5%25MU%29UZ1@C5.png</a>)</p>
+<h5 id="海龟坐标">海龟坐标</h5>
+<p><img src="attachment:@EPDVCJ13D%7DQLKS5%5D%60M@%2528.png" alt="@EPDVCJ13D%7DQLKS5%5D%60M@%2528.png">
+<img src="attachment:%29H~7S4D@$" alt="%29H~7S4D@$)T%7D918__4LC2Z5.png">T%7D918__4LC2Z5.png)</p>
+<h4 id="4turtle角度坐标体系">4、turtle角度坐标体系</h4>
+<p>turtle.seth(angle)  #改变海龟的行进方向<br>
+<img src="attachment:WE1%5DUQDQ$933BDE2WXDIE$D.png" alt="WE1%5DUQDQ$933BDE2WXDIE$D.png">
+turtle.left(angle)  #向左<br>
+turtle.right(angle)   #向右<br>
+<img src="attachment:1NI%7DO99KJ3630IOE8L5%7B0HT.png" alt="1NI%7DO99KJ3630IOE8L5%7B0HT.png"></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#实例</span>
+<span style="color:#f92672">import</span> turtle
+turtle<span style="color:#f92672">.</span>left(<span style="color:#ae81ff">45</span>)
+turtle<span style="color:#f92672">.</span>fd(<span style="color:#ae81ff">150</span>)
+turtle<span style="color:#f92672">.</span>right(<span style="color:#ae81ff">135</span>)
+turtle<span style="color:#f92672">.</span>fd(<span style="color:#ae81ff">300</span>)
+turtle<span style="color:#f92672">.</span>left(<span style="color:#ae81ff">135</span>)
+turtle<span style="color:#f92672">.</span>fd(<span style="color:#ae81ff">150</span>)
+</code></pre></div><h4 id="5rgb色彩模式">5、RGB色彩模式</h4>
+<blockquote>
+<p>由三种颜色构成的万物色</p>
+</blockquote>
+<p>[图片]<img src="attachment:%E5%9B%BE%E7%89%87.png" alt="%E5%9B%BE%E7%89%87.png"></p>
+<h5 id="常用rgb色彩">常用RGB色彩</h5>
+<table>
+<thead>
+<tr>
+<th align="left">英文名称</th>
+<th align="left">RGB整数值</th>
+<th align="left">RGB小数值</th>
+<th align="left">中文名称</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">white</td>
+<td align="left">255,255,255</td>
+<td align="left">1,1,1</td>
+<td align="left">白色</td>
+</tr>
+<tr>
+<td align="left">yellow</td>
+<td align="left">255,255,0</td>
+<td align="left">1,1,0</td>
+<td align="left">黄色</td>
+</tr>
+<tr>
+<td align="left">magenta</td>
+<td align="left">255,0,255</td>
+<td align="left">1,0,1</td>
+<td align="left">洋红</td>
+</tr>
+<tr>
+<td align="left">cyan</td>
+<td align="left">0,255,255</td>
+<td align="left">0,1,1</td>
+<td align="left">青色</td>
+</tr>
+<tr>
+<td align="left">blue</td>
+<td align="left">0,0,255</td>
+<td align="left">0,0,1</td>
+<td align="left">蓝色</td>
+</tr>
+<tr>
+<td align="left">black</td>
+<td align="left">0,0,0</td>
+<td align="left">0,0,0</td>
+<td align="left">黑色</td>
+</tr>
+</tbody>
+</table>
+<p><img src="attachment:RMM3Y0%29YSCA%25VW01HGW%5DD%5BS.png" alt="RMM3Y0%29YSCA%25VW01HGW%5DD%5BS.png"></p>
+<p>默认采用小数值，可切换为整数值<br>
+<img src="attachment:R%5B%7B@LS_%5BVLV%252HLKK%60BR%7DHW.jpg" alt="R%5B%7B@LS_%5BVLV%252HLKK%60BR%7DHW.jpg"></p>
+<h3 id="24-turtle程序语法元素">2.4 turtle程序语法元素</h3>
+<blockquote>
+<ul>
+<li>库引用与import</li>
+<li>turtle画笔控制函数</li>
+<li>turtle运动控制函数</li>
+<li>turtle方向控制函数</li>
+<li>基本循环语句</li>
+<li>Python蟒蛇绘制代码分析</li>
+</ul>
+</blockquote>
+<h4 id="1库引用">1、库引用</h4>
+<blockquote>
+<p>扩充Python程序功能的方式</p>
+</blockquote>
+<h5 id="使用import保留字完成采用--a--b-编码风格">使用import保留字完成，采用 &lt; a &gt;.&lt; b &gt;()编码风格</h5>
+<pre><code>    import&lt;库名&gt;  
+    &lt;库名&gt;.&lt;函数名&gt;(&lt;函数参数&gt;)   
+</code></pre><p>为了简化代码，使用from和import保留字共同完成</p>
+<pre><code>    from&lt;库名&gt;import&lt;函数名&gt;  
+    from&lt;库名&gt;import*  
+    &lt;函数名&gt;(&lt;函数参数&gt;)  
+</code></pre><p>两种库引用方法比较：<br>
+<img src="attachment:0V$R%60%281$TKFLNQGO%60AU0J%5DT.png" alt="0V$R%60%281$TKFLNQGO%60AU0J%5DT.png"></p>
+<h5 id="import更多的用法">import更多的用法</h5>
+<p>使用import和as保留字共同完成</p>
+<pre><code>    import&lt;库名&gt;as&lt;库别名&gt;  
+    &lt;库别名&gt;.&lt;函数名&gt;(&lt;函数参数&gt;)  
+</code></pre><h4 id="2turtle画笔控制函数">2、turtle画笔控制函数</h4>
+<blockquote>
+<p>画笔操作后一直有效，一般成对出现</p>
+</blockquote>
+<p>1抬起画笔，海龟在飞行（不形成绘图）<br>
+<code>turtle.penup()---别名:turtle.pu()</code><br>
+2落下画笔，海龟在爬行（形成绘图）<br>
+<code>turtle.pendown()---别名：turtle.pd()</code></p>
+<blockquote>
+<p>画笔设置后一直有效，直至下次重新设置</p>
+</blockquote>
+<p>1画笔宽度，海龟的腰围<br>
+<code>turtle.pensize(width)---别名：turtle.width(width)</code></p>
+<p>2画笔颜色，海龟在涂装<br>
+<code>turtle.pencolor(color)---color为颜色字符串或r,g,b值</code></p>
+<blockquote>
+<p>pencolor(color)的color参数可以有三种形式</p>
+</blockquote>
+<p>颜色字符串：turtle.pencolor(&ldquo;purple&rdquo;)<br>
+RGB的小数值：turtle.pencolor(0.63, 0.13, 0.94)<br>
+RGB的元组值：turtle.pencolor((0.63, 0.13, 0.94))</p>
+<h4 id="3运动控制函数">3、运动控制函数</h4>
+<blockquote>
+<p>控制海龟行进：走直线&amp;走曲线</p>
+</blockquote>
+<p>1向前走，海龟走直线</p>
+<p><code>turtle.forward(d)---别名：turtle.fd(d)</code><br>
+d：行进距离，可以为负数，行进距离单位是像素</p>
+<p>2根据半径r绘制extent角度的弧形 <br>
+<code>turtle.circle(r, extent = None)</code><br>
+r：默认圆心在海龟左侧r距离的位置<br>
+extent：绘制角度，默认是360度整圆</p>
+<p>[图片]<img src="attachment:%E5%9B%BE%E7%89%87.png" alt="%E5%9B%BE%E7%89%87.png"></p>
+<h4 id="4方向控制函数">4、方向控制函数</h4>
+<blockquote>
+<p>控制海龟面对方向：绝对角度&amp;海龟角度</p>
+</blockquote>
+<p>改变行进方向，海龟走角度<br>
+<code>turtle.setheading(angle)---别名：turtle.seth(angle)</code> <br>
+angle：改变行进方向，海龟走角度</p>
+<p><code>turtle.left(angle)：海龟向左转</code><br>
+<code>turtle.right(angle)：海龟向右转</code></p>
+<h4 id="5循环语句">5、循环语句</h4>
+<blockquote>
+<p>按照一定次数循环执行一组语句</p>
+</blockquote>
+<pre><code>for &lt;变量&gt; in range (&lt;参数&gt;)
+    &lt;被循环执行的语句&gt;  
+</code></pre><p>&lt;变量&gt;：表示每次循环的计数，0到&lt;次数&gt;-1<br>
+<img src="attachment:6%7BLF8%7DY%5DJYSJB8I1US5~W%28C.png" alt="6%7BLF8%7DY%5DJYSJB8I1US5~W%28C.png"></p>
+<h6 id="range函数">range()函数</h6>
+<p><code>range(N)</code><br>
+产生0到N-1的整数序列，共N个<br>
+<code>range(M,N)</code><br>
+产生M到N-1的整数序列，共N-M个</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+</code></pre></div>
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+
+
+
+
+
+
+
+
+<figure class="author-image">
+    <a class="img" href="https://zmzhang97.github.io/" style="background-image: url(/images/logo2.ico)"><span class="hidden">zzm's Picture</span></a>
+</figure>
+
+
+<section class="author">
+  <h4><a href="https://zmzhang97.github.io/">zzm</a></h4>
+  
+  <p>秃头研究生</p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location">ShenZhen, China</span>
+    <span class="author-link icon-link"><a href="https://blog.csdn.net/zmzhangcsdn/">https://blog.csdn.net/zmzhangcsdn/</a></span>
+  </div>
+</section>
+
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=PythonU2&nbsp;-&nbsp;Luck%20Sugar&amp;url=https%3a%2f%2fzmzhang97.github.io%2f2020%2f08%2f11%2fpythonu2%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fzmzhang97.github.io%2f2020%2f08%2f11%2fpythonu2%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fzmzhang97.github.io%2f2020%2f08%2f11%2fpythonu2%2f&amp;description=PythonU2"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2fzmzhang97.github.io%2f2020%2f08%2f11%2fpythonu2%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+<div id="disqus_thread"></div>
+<script>
+
+
+
+
+var disqus_config = function () {
+this.page.url = "https:\/\/zmzhang97.github.io\/2020\/08\/11\/pythonu2\/";  
+this.page.identifier = "https:\/\/zmzhang97.github.io\/2020\/08\/11\/pythonu2\/"; 
+};
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://LuckSugar.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+
+
+
+
+  </footer>
+</article>
+
+</main>
+
+
+  <aside class="read-next">
+  
+      <a class="read-next-story" style="background-image: url(/images/paper2.jpg)" href="https://zmzhang97.github.io/2020/08/11/pythonu1/">
+          <section class="post">
+              <h2>PythonU1</h2>
+              
+          </section>
+      </a>
+  
+  
+</aside>
+
+
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">Luck Sugar</a> All rights reserved - 2020</section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="https://zmzhang97.github.io/js/jquery.js"></script>
+    <script type="text/javascript" src="https://zmzhang97.github.io/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="https://zmzhang97.github.io/js/index.js"></script>
+    
+</body>
+</html>
+
